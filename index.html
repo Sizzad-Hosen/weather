@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="html.css"> -->
+</head>
+<body >
+    <!-- main section -->
+   <main class=" bg-gradient-to-r from-sky-500 to-indigo-500 m-20 p-10  ">
+
+<!-- header section -->
+    <header class="card max-w-sm mx-auto">
+
+        <div class="search  relative block  w-full text-sm text-center">
+            <input id="input-field" class="rounded px-7 py-5" type="text" placeholder="Enter city name">
+            <button id="btn-submit" class="bg-red-400 rounded px-6 py-5"><i class="fa-solid fa-magnifying-glass width-100"></i></button>
+
+  
+        </div>
+       
+            
+    
+    </header>
+    <!-- header section end -->
+
+
+        <!-- weather section -->
+        <section class="weather p-4 font-semibold text-white text-center text-3xl">
+            <div class="flex justify-center items-center">
+                <img src="rain.png" alt="alternate text">
+            </div>
+        <h1 id="temp">22°C</h1>
+        <h2 id="city">London</h2>
+
+        
+            </section>
+
+        <!-- details div -->
+        <section class="details flex justify-center items-center gap-5 p-4 font-semibold text-white p-10 m-5 text-3xl">
+
+            <div class="col flex justify-center items-center">
+                <img src="humidity.png" alt="">
+
+            </div>
+           <div class=" p-4">
+            <p id="humidity">50%</p>
+            <p>Humidity</p>
+            
+            
+           </div>
+        
+            <div class="col flex justify-center items-center">
+                <img src="wind.png" alt="">
+    
+            </div>
+           <div class=" p-4">
+            <p id="wind">15 km/h</p>
+            <p>wind</p>
+           </div>
+
+        </section>    
+   </main>
+   <script src="weather.js"></script>
+</body>
+</html>
